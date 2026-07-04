@@ -33,6 +33,7 @@ Swap for your distro/manager as needed.
 |---|---|---|---|---|
 | [Stirling PDF](https://github.com/Stirling-Tools/stirling-pdf) | PDF editing (self-hosted) | `docker run -p 8080:8080 frooodle/s-pdf` | `docker run -p 8080:8080 frooodle/s-pdf` | `docker run -p 8080:8080 frooodle/s-pdf` |
 | [Obsidian](https://obsidian.md) | note taking | `brew install --cask obsidian` | Download from obsidian.md | `winget install Obsidian.Obsidian` |
+| [Google Drive](https://drive.google.com) | cloud storage & file sync | `brew install --cask google-drive` | Download from drive.google.com | `winget install Google.GoogleDrive` |
 
 ## Dev Environment
 
@@ -42,4 +43,4 @@ Swap for your distro/manager as needed.
 
 ## Browser Extensions / Accounts / Other
 
-- (things that aren't installed via a package manager — logins, extensions, fonts, etc.)
+- [Raindrop.io](https://raindrop.io) — bookmarking
