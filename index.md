@@ -31,7 +31,8 @@ Swap for your distro/manager as needed.
 
 | Software | Why | macOS | Linux | Windows |
 |---|---|---|---|---|
-|  |  |  |  |  |
+| [Stirling PDF](https://github.com/Stirling-Tools/stirling-pdf) | PDF editing (self-hosted) | `docker run -p 8080:8080 frooodle/s-pdf` | `docker run -p 8080:8080 frooodle/s-pdf` | `docker run -p 8080:8080 frooodle/s-pdf` |
+| [Obsidian](https://obsidian.md) | note taking | `brew install --cask obsidian` | Download from obsidian.md | `winget install Obsidian.Obsidian` |
 
 ## Dev Environment
 
