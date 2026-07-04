@@ -35,6 +35,7 @@ Swap for your distro/manager as needed.
 | [Stirling PDF](https://github.com/Stirling-Tools/stirling-pdf) | PDF editing (self-hosted) | `docker run -p 8080:8080 frooodle/s-pdf` | `docker run -p 8080:8080 frooodle/s-pdf` | `docker run -p 8080:8080 frooodle/s-pdf` |
 | [Obsidian](https://obsidian.md) | note taking | `brew install --cask obsidian` | Download from obsidian.md | `winget install Obsidian.Obsidian` |
 | [Google Drive](https://drive.google.com) | cloud storage & file sync | `brew install --cask google-drive` | Download from drive.google.com | `winget install Google.GoogleDrive` |
+| [Tailscale](https://tailscale.com) | VPN for NAS connectivity | `brew install --cask tailscale` | `curl -fsSL https://tailscale.com/install.sh \| sh` | `winget install Tailscale.Tailscale` |
 
 ## Dev Environment
 
