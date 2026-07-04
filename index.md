@@ -26,6 +26,7 @@ Swap for your distro/manager as needed.
 | Software | Why | macOS | Linux | Windows |
 |---|---|---|---|---|
 | git | version control | `brew install git` | `apt install git` | `winget install Git.Git` |
+| [mac-cleanup](https://github.com/mac-cleanup/mac-cleanup-py) | clean up macOS junk files | `brew install mac-cleanup` | N/A | N/A |
 
 ## Apps
 
@@ -39,7 +40,7 @@ Swap for your distro/manager as needed.
 
 | Software | Why | macOS | Linux | Windows |
 |---|---|---|---|---|
-|  |  |  |  |  |
+| [VS Code](https://code.visualstudio.com) | code editor | `brew install --cask visual-studio-code` | `snap install code --classic` | `winget install Microsoft.VisualStudioCode` |
 
 ## Browser Extensions / Accounts / Other
 
