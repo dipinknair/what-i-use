@@ -36,7 +36,7 @@ Swap for your distro/manager as needed.
 | [Obsidian](https://obsidian.md) | note taking | `brew install --cask obsidian` | Download from obsidian.md | `winget install Obsidian.Obsidian` |
 | [Google Drive](https://drive.google.com) | cloud storage & file sync | `brew install --cask google-drive` | Download from drive.google.com | `winget install Google.GoogleDrive` |
 | [Tailscale](https://tailscale.com) | VPN / Magic DNS for remote access | `brew install --cask tailscale` | `curl -fsSL https://tailscale.com/install.sh \| sh` | `winget install Tailscale.Tailscale` |
-| [Nextcloud](https://nextcloud.com) | self-hosted private cloud storage (on Jetson Nano) | Access via browser at `https://dipinano.tail38e261.ts.net:8080` | `docker run -d -p 8080:80 -v /mnt/ssd/nextcloud:/var/www/html nextcloud:latest` | Access via browser at `https://dipinano.tail38e261.ts.net:8080` |
+| [Nextcloud](https://nextcloud.com) | self-hosted private cloud storage (on Jetson Nano) | Access via browser at `https://jetson.xxxxxxxxxxxx.ts.net:8080` | `docker run -d -p 8080:80 -v /mnt/ssd/nextcloud:/var/www/html nextcloud:latest` | Access via browser at `https://jetson.xxxxxxxxxxxx.ts.net:8080` |
 
 ## Dev Environment
 

@@ -244,7 +244,7 @@ Refresh the Nextcloud web UI — your files will appear. Verify a few different 
 
 ### Enable Tailscale Magic DNS HTTPS
 
-Tailscale's Magic DNS gives every device on your tailnet a stable hostname like `dipinano.tail38e261.ts.net`. Enable HTTPS so your Nextcloud URL is properly secured:
+Tailscale's Magic DNS gives every device on your tailnet a stable hostname like `jetson.xxxxxxxxxxxx.ts.net`. Enable HTTPS so your Nextcloud URL is properly secured:
 
 ```bash
 # Enable HTTPS on the Tailscale node (one-time)
@@ -257,15 +257,15 @@ Then add your Magic DNS hostname to Nextcloud's trusted domains:
 
 ```bash
 docker exec -it nextcloud_app_1 su -s /bin/bash www-data -c \
-  "php occ config:system:set trusted_domains 1 --value='dipinano.tail38e261.ts.net'"
+  "php occ config:system:set trusted_domains 1 --value='jetson.xxxxxxxxxxxx.ts.net'"
 ```
 
-> Replace `dipinano.tail38e261.ts.net` with your actual Magic DNS hostname (find it with `tailscale status`).
+> Replace `jetson.xxxxxxxxxxxx.ts.net` with your actual Magic DNS hostname (find it with `tailscale status`).
 
 Now access your Nextcloud from any device on your tailnet at:
 
 ```
-https://dipinano.tail38e261.ts.net:8080
+https://jetson.xxxxxxxxxxxx.ts.net:8080
 ```
 
 ---
@@ -304,11 +304,11 @@ Once both devices are on Tailscale, from anywhere in the world you can:
 
 | Service | URL |
 |---------|-----|
-| **Nextcloud Files** | `https://dipinano.tail38e261.ts.net:8080` |
-| **Pi-hole Dashboard** | `http://dipinano.tail38e261.ts.net/admin` |
-| **SSH** | `ssh dipinano@dipinano.tail38e261.ts.net` |
+| **Nextcloud Files** | `https://jetson.xxxxxxxxxxxx.ts.net:8080` |
+| **Pi-hole Dashboard** | `http://jetson.xxxxxxxxxxxx.ts.net/admin` |
+| **SSH** | `ssh your-username@jetson.xxxxxxxxxxxx.ts.net` |
 
-> Replace `dipinano.tail38e261.ts.net` with your actual Magic DNS hostname from `tailscale status`.
+> Replace `jetson.xxxxxxxxxxxx.ts.net` with your actual Magic DNS hostname from `tailscale status`.
 
 > **Performance note:** Tailscale uses direct peer-to-peer connections (WireGuard encrypted) so overhead is minimal. Speed is limited mainly by your home internet upload speed.
 
@@ -329,7 +329,7 @@ NVIDIA Jetson Nano (192.168.1.200)
 │   └── Tailscale            ← WireGuard VPN + Magic DNS
 └── Access
     ├── Local:  http://192.168.1.200:8080
-    └── Remote: https://dipinano.tail38e261.ts.net:8080 (via Tailscale Magic DNS)
+    └── Remote: https://jetson.xxxxxxxxxxxx.ts.net:8080 (via Tailscale Magic DNS)
 ```
 
 ---
